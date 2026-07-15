@@ -14,7 +14,7 @@ const money = value => brl.format(Number.isFinite(value) ? value : 0);
 const compactMoney = value => new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 }).format(Number.isFinite(value) ? value : 0);
 
 const appMeta = {
-  overview: ["ANÁLISE / VISÃO GERAL", "Visão geral"],
+  overview: ["RELATÓRIO GERENCIAL", "Visão geral"],
   financas: ["ANÁLISE / BASE DE DADOS", "Dados financeiros"],
   calculadoras: ["ANÁLISE / FERRAMENTAS", "Calculadoras"],
   tributos: ["ANÁLISE / CENÁRIOS", "Simulação tributária"],
@@ -68,7 +68,7 @@ function getFinancialMetrics() {
 
 const calculatorDefinitions = {
   margin: {
-    index: "01 / 07", eyebrow: "RENTABILIDADE", title: "Margem de lucro", description: "Descubra quanto do faturamento se converte em resultado líquido.",
+    index: "01 / 07", eyebrow: "RENTABILIDADE", title: "Margem de Lucro", description: "Cálculo do percentual de lucro sobre a receita bruta.",
     fields: [{ key: "revenue", label: "Receita total", prefix: "R$" }, { key: "profit", label: "Lucro líquido", prefix: "R$" }],
     defaults: () => ({ revenue: state.financial.revenue, profit: getFinancialMetrics().profit }),
     calculate: v => ({ value: v.revenue ? (v.profit / v.revenue) * 100 : 0, formatted: pct(v.revenue ? (v.profit / v.revenue) * 100 : 0), interpretation: `A cada R$ 100 faturados, ${money(v.revenue ? (v.profit / v.revenue) * 100 : 0)} permanecem como lucro.`, formula: "Margem líquida = (Lucro líquido ÷ Receita total) × 100", steps: [`Divida ${money(v.profit)} por ${money(v.revenue)}.`, `Multiplique o quociente por 100 para converter em percentual.`] })
@@ -80,7 +80,7 @@ const calculatorDefinitions = {
     calculate: v => { const result = v.revenue - v.costs - v.taxes; return { value: result, formatted: money(result), interpretation: result >= 0 ? "A operação apresenta resultado líquido positivo no cenário informado." : "O cenário apresenta prejuízo e requer revisão de custos, preço ou receita.", formula: "Lucro líquido = Receita − Custos e despesas − Tributos", steps: [`Subtraia ${money(v.costs)} da receita de ${money(v.revenue)}.`, `Subtraia os tributos estimados de ${money(v.taxes)}.`] }; }
   },
   breakeven: {
-    index: "03 / 07", eyebrow: "SUSTENTAÇÃO", title: "Ponto de equilíbrio", description: "Calcule a receita mínima para cobrir custos fixos e variáveis.",
+    index: "03 / 07", eyebrow: "PONTO CRÍTICO", title: "Ponto de Equilíbrio", description: "Cálculo do faturamento necessário para cobrir todos os custos.",
     fields: [{ key: "fixed", label: "Custos fixos", prefix: "R$" }, { key: "revenue", label: "Receita de referência", prefix: "R$" }, { key: "variable", label: "Custos variáveis", prefix: "R$" }],
     defaults: () => ({ fixed: state.financial.fixedCost, revenue: state.financial.revenue, variable: state.financial.variableCost }),
     calculate: v => { const rate = v.revenue ? (v.revenue - v.variable) / v.revenue : 0; const result = rate > 0 ? v.fixed / rate : 0; return { value: result, formatted: money(result), interpretation: `A receita precisa atingir aproximadamente ${money(result)} para cobrir a estrutura informada.`, formula: "Ponto de equilíbrio = Custos fixos ÷ Margem de contribuição (%)", steps: [`Margem de contribuição: (${money(v.revenue)} − ${money(v.variable)}) ÷ ${money(v.revenue)} = ${pct(rate * 100)}.`, `Divida ${money(v.fixed)} por ${pct(rate * 100)}.`] }; }
@@ -104,7 +104,7 @@ const calculatorDefinitions = {
     calculate: v => { const result = v.initial + v.inflow - v.outflow; return { value: result, formatted: money(result), interpretation: result >= 0 ? "O caixa encerra o período em posição positiva." : "O caixa encerra o período negativo e exige ação de curto prazo.", formula: "Saldo final = Saldo inicial + Entradas − Saídas", steps: [`Some o saldo inicial de ${money(v.initial)} às entradas de ${money(v.inflow)}.`, `Subtraia as saídas de ${money(v.outflow)}.`] }; }
   },
   dre: {
-    index: "07 / 07", eyebrow: "DEMONSTRAÇÃO", title: "DRE simplificada", description: "Organize a formação do resultado em uma estrutura resumida.",
+    index: "07 / 07", eyebrow: "RESULTADO", title: "DRE Gerencial", description: "Estrutura simplificada de Receitas, Custos e Resultado.",
     fields: [{ key: "revenue", label: "Receita bruta", prefix: "R$" }, { key: "variable", label: "Custos variáveis", prefix: "R$" }, { key: "fixed", label: "Despesas fixas", prefix: "R$" }, { key: "taxes", label: "Tributos", prefix: "R$" }],
     defaults: () => ({ revenue: state.financial.revenue, variable: state.financial.variableCost, fixed: state.financial.fixedCost, taxes: getFinancialMetrics().estimatedOperationalTax }),
     calculate: v => { const contribution = v.revenue - v.variable; const result = contribution - v.fixed - v.taxes; return { value: result, formatted: money(result), interpretation: result >= 0 ? "A DRE simplificada indica resultado líquido positivo." : "A DRE simplificada indica prejuízo no período.", formula: "Resultado = Receita − Custos variáveis − Despesas fixas − Tributos", steps: [`Receita líquida de custos variáveis: ${money(v.revenue)} − ${money(v.variable)} = ${money(contribution)}.`, `Subtraia despesas fixas de ${money(v.fixed)}.`, `Subtraia tributos de ${money(v.taxes)}.`] }; }
