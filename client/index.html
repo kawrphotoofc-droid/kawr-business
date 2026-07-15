@@ -1,26 +1,327 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="description" content="Kawr Business — apoio à gestão financeira, tributária e gerencial para empresários e contadores." />
+  <meta name="theme-color" content="#0F0F10" />
+  <title>Kawr Business — Gestão que você consegue explicar</title>
+  <link rel="icon" type="image/png" href="/manus-storage/kawr-logo_104b976f.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Cofre Editorial: clareza em marfim, concentração em ônix e dourado reservado a decisões. -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Kawr Business</title>    
-    <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    THIS IS THE END OF A COMMENT BLOCK, BLOCK TO BE DELETED -->
-  </head>
+  <div id="marketingView" class="marketing-view">
+    <header class="site-header" id="siteHeader">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="Kawr Business — início">
+          <img src="/manus-storage/kawr-logo_104b976f.png" alt="" class="brand-mark" />
+          <span class="brand-copy"><strong>KAWR</strong><small>BUSINESS</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="#recursos">Recursos</a>
+          <a href="#transparencia">Transparência</a>
+          <a href="#planos">Planos</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="header-actions">
+          <button class="text-button" data-open-app>Ver demonstração</button>
+          <button class="button button-gold button-compact" data-open-app>Testar gratuitamente <span aria-hidden="true">↗</span></button>
+          <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menu"><span></span><span></span></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Navegação móvel">
+        <a href="#recursos">Recursos</a><a href="#transparencia">Transparência</a><a href="#planos">Planos</a><a href="#faq">FAQ</a>
+        <button class="button button-gold" data-open-app>Abrir demonstração</button>
+      </nav>
+    </header>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
-  </body>
+    <main id="conteudo">
+      <section class="hero" id="inicio">
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-rule" aria-hidden="true"><span>01</span></div>
+        <div class="hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Inteligência financeira para quem decide</p>
+            <h1>Transforme a gestão financeira da <em>sua empresa.</em></h1>
+            <p class="hero-lead">Centralize indicadores financeiros, análises tributárias e informações gerenciais em um único lugar — com cálculos que você consegue abrir, conferir e explicar.</p>
+            <div class="hero-actions">
+              <button class="button button-gold" data-open-app>Testar gratuitamente <span aria-hidden="true">↗</span></button>
+              <a class="button button-ghost" href="#recursos">Conhecer recursos <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="trust-note">
+              <div class="trust-icon">✓</div>
+              <p><strong>Apoio, não substituição.</strong><br />O Kawr Business organiza informações e apoia decisões. A validação profissional continua essencial.</p>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Prévia do dashboard Kawr Business">
+            <div class="hero-image-frame">
+              <img src="/manus-storage/kawr-hero-dashboard_5aa6172b.jpg" alt="Visual editorial de um dashboard financeiro com gráficos e indicadores" />
+              <div class="hero-kpi hero-kpi-top"><small>Score financeiro</small><strong>824</strong><span>Saudável</span></div>
+              <div class="hero-kpi hero-kpi-bottom"><small>Margem líquida</small><strong>24,8%</strong><span>+3,2 p.p.</span></div>
+            </div>
+            <p class="visual-caption"><span>VISÃO CONSOLIDADA</span> Dados que conduzem à decisão, não apenas à observação.</p>
+          </div>
+        </div>
+        <div class="hero-foot">
+          <span>FINANCEIRO</span><i></i><span>TRIBUTÁRIO</span><i></i><span>GERENCIAL</span><i></i><span>TRANSPARENTE</span>
+        </div>
+      </section>
 
+      <section class="statement section-light">
+        <div class="section-index">02</div>
+        <div class="statement-grid">
+          <p class="eyebrow dark"><span></span> Um painel, uma leitura</p>
+          <h2>Menos planilhas dispersas.<br /><em>Mais contexto para decidir.</em></h2>
+          <p class="statement-copy">Da entrada de dados ao relatório executivo, cada módulo conversa com o próximo. Uma alteração no faturamento atualiza indicadores, alertas, score e cenários em tempo real.</p>
+        </div>
+        <div class="metric-ribbon" aria-label="Benefícios da plataforma">
+          <div><strong>15+</strong><span>recursos integrados</span></div>
+          <div><strong>7</strong><span>calculadoras auditáveis</span></div>
+          <div><strong>1</strong><span>visão gerencial</span></div>
+          <div><strong>100%</strong><span>transparência de cálculo</span></div>
+        </div>
+      </section>
+
+      <section class="features section-light" id="recursos">
+        <div class="section-heading">
+          <div><p class="eyebrow dark"><span></span> Ecossistema de gestão</p><h2>Do número bruto ao<br /><em>próximo movimento.</em></h2></div>
+          <p>Uma suíte conectada para acompanhar saúde financeira, entender tributos e transformar variações em ações claras.</p>
+        </div>
+        <div class="feature-mosaic">
+          <article class="feature-card feature-primary">
+            <span class="feature-number">01</span><div class="icon-box">⌁</div>
+            <h3>Dashboard financeiro</h3><p>Receita, despesas, lucro, caixa e tendências em uma leitura executiva.</p>
+            <div class="mini-chart" aria-hidden="true"><span style="height:42%"></span><span style="height:68%"></span><span style="height:55%"></span><span style="height:82%"></span><span style="height:74%"></span><span style="height:95%"></span></div>
+          </article>
+          <article class="feature-card"><span class="feature-number">02</span><div class="icon-box">∿</div><h3>Fluxo de caixa</h3><p>Entradas, saídas e projeções para antecipar pressão sobre o caixa.</p><button class="card-link" data-open-app data-app-target="financas">Explorar recurso →</button></article>
+          <article class="feature-card"><span class="feature-number">03</span><div class="icon-box">≡</div><h3>DRE simplificada</h3><p>Uma visão objetiva da formação do resultado operacional e líquido.</p><button class="card-link" data-open-app data-app-target="calculadoras">Calcular agora →</button></article>
+          <article class="feature-card feature-dark"><span class="feature-number">04</span><div class="icon-box">◎</div><h3>Score financeiro</h3><p>Seis dimensões reunidas em uma nota de 0 a 1000, com recomendações claras.</p><div class="score-preview"><strong>824</strong><span>SAUDÁVEL</span></div></article>
+          <article class="feature-card feature-wide"><span class="feature-number">05</span><div class="feature-wide-copy"><div class="icon-box">◈</div><h3>Simulação tributária</h3><p>Compare estimativas entre Simples Nacional e Lucro Presumido com alíquota efetiva, tributos incidentes e valor líquido.</p><button class="card-link" data-open-app data-app-target="tributos">Simular cenários →</button></div><div class="tax-art" role="img" aria-label="Comparação abstrata de cenários tributários"><span class="tax-art-label">CENÁRIO A</span><strong>13,45%</strong><i></i><span class="tax-art-label bottom">CENÁRIO B</span><b>16,33%</b><div class="tax-art-blade"></div></div></article>
+          <article class="feature-card"><span class="feature-number">06</span><div class="icon-box">!</div><h3>Alertas inteligentes</h3><p>Sinais priorizados sobre queda de receita, margem, despesas e caixa.</p><button class="card-link" data-open-app data-app-target="alertas">Ver alertas →</button></article>
+        </div>
+        <div class="feature-chips" aria-label="Outros recursos"><span>Margem de lucro</span><span>Ponto de equilíbrio</span><span>Markup</span><span>Fator R</span><span>Relatórios</span><span>Insights</span><span>PDF executivo</span><span>Gráficos interativos</span></div>
+      </section>
+
+      <section class="transparency section-dark" id="transparencia">
+        <div class="section-index gold">03</div>
+        <div class="split-section">
+          <div class="split-visual angled-frame audit-art" role="img" aria-label="Trilha visual de um cálculo financeiro transparente"><div class="audit-art-spine"><span>01</span><span>02</span><span>03</span><span>04</span></div><div class="audit-art-sheet"><small>FÓRMULA AUDITÁVEL</small><strong>(LUCRO ÷ RECEITA) × 100</strong><p>38.520 ÷ 128.400</p><b>= 30,00%</b></div><div class="audit-art-k">K</div></div>
+          <div class="split-copy">
+            <p class="eyebrow"><span></span> Transparência por padrão</p>
+            <h2>Não aceite um número<br /><em>sem entender o caminho.</em></h2>
+            <p>Todo resultado possui uma trilha de auditoria. Veja fórmulas, entradas, alíquotas, etapas intermediárias e a explicação do resultado final.</p>
+            <ol class="audit-steps">
+              <li><span>01</span><div><strong>Valores informados</strong><small>Confira a origem de cada entrada.</small></div></li>
+              <li><span>02</span><div><strong>Fórmula aplicada</strong><small>Entenda a regra usada no cálculo.</small></div></li>
+              <li><span>03</span><div><strong>Resultado explicado</strong><small>Transforme o número em contexto.</small></div></li>
+            </ol>
+            <button class="button button-outline-light" data-demo-calculation>Ver cálculo demonstrativo <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="score-section section-light">
+        <div class="split-section reverse">
+          <div class="split-copy dark-copy">
+            <p class="eyebrow dark"><span></span> Score financeiro</p>
+            <h2>Uma nota que revela<br /><em>onde agir primeiro.</em></h2>
+            <p>Liquidez, lucratividade, fluxo de caixa, crescimento, eficiência e estabilidade analisados em conjunto — sem esconder os critérios.</p>
+            <div class="dimension-list"><span>Liquidez</span><span>Lucratividade</span><span>Caixa</span><span>Crescimento</span><span>Eficiência</span><span>Estabilidade</span></div>
+            <button class="button button-dark" data-open-app data-app-target="score">Calcular meu score <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="split-visual soft-frame score-art" role="img" aria-label="Instrumento editorial de score financeiro"><div class="score-art-ring"><span>SCORE ATUAL</span><strong>824</strong><small>de 1000 pontos</small></div><div class="score-art-scale"><i style="width:82.4%"></i></div><p><b>SAUDÁVEL</b> · 6 DIMENSÕES ANALISADAS</p><div class="score-art-blade"></div></div>
+        </div>
+      </section>
+
+      <section class="plans section-ivory" id="planos">
+        <div class="section-heading centered-heading"><div><p class="eyebrow dark"><span></span> Planos preparados para crescer</p><h2>Comece com clareza.<br /><em>Evolua com controle.</em></h2></div><p>Pagamento não implementado nesta demonstração. Os planos representam a arquitetura comercial futura.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card"><p class="plan-name">STARTER</p><h3>Base para organizar</h3><p class="price"><span>R$</span>49<small>/mês</small></p><ul><li>Dashboard financeiro</li><li>Calculadoras essenciais</li><li>Alertas básicos</li><li>1 empresa</li></ul><button class="button button-outline-dark" data-coming-soon>Começar agora</button></article>
+          <article class="price-card featured"><div class="popular">MAIS COMPLETO</div><p class="plan-name">PROFESSIONAL</p><h3>Decisão com contexto</h3><p class="price"><span>R$</span>129<small>/mês</small></p><ul><li>Todos os recursos Starter</li><li>Simulação tributária</li><li>Score e insights</li><li>PDF executivo</li><li>Até 5 empresas</li></ul><button class="button button-gold" data-coming-soon>Começar agora</button></article>
+          <article class="price-card"><p class="plan-name">ENTERPRISE</p><h3>Gestão em escala</h3><p class="price custom">Sob consulta</p><ul><li>Todos os recursos Professional</li><li>Empresas ilimitadas</li><li>Governança avançada</li><li>Suporte dedicado</li></ul><button class="button button-outline-dark" data-coming-soon>Falar com especialista</button></article>
+        </div>
+      </section>
+
+      <section class="faq section-light" id="faq">
+        <div class="faq-intro"><p class="eyebrow dark"><span></span> Perguntas frequentes</p><h2>Antes de começar,<br /><em>vale saber.</em></h2><p>O Kawr Business foi desenhado como ferramenta de apoio. Decisões fiscais e contábeis devem ser validadas por profissional habilitado.</p></div>
+        <div class="accordion">
+          <details open><summary>O sistema substitui um contador?<span>+</span></summary><p>Não. O Kawr Business organiza dados, executa estimativas e facilita análises. A interpretação técnica, a escrituração e a validação fiscal permanecem sob responsabilidade do contador.</p></details>
+          <details><summary>Como funciona?<span>+</span></summary><p>Você informa dados financeiros básicos. O sistema recalcula indicadores, gráficos, alertas, score e cenários automaticamente e mostra a trilha de cada cálculo.</p></details>
+          <details><summary>Quem pode utilizar?<span>+</span></summary><p>Empresários, gestores financeiros e profissionais contábeis que desejam consolidar informações e conduzir conversas mais objetivas.</p></details>
+          <details><summary>Os cálculos são confiáveis?<span>+</span></summary><p>As fórmulas financeiras são demonstradas de forma transparente. Simulações tributárias são estimativas educacionais e devem ser conferidas com contador considerando atividade, anexos, legislação e particularidades da empresa.</p></details>
+          <details><summary>Os dados ficam armazenados?<span>+</span></summary><p>Nesta demonstração, os dados permanecem apenas no navegador. Não há conta, banco de dados ou histórico em nuvem.</p></details>
+          <details><summary>Posso cancelar quando quiser?<span>+</span></summary><p>A cobrança ainda não está implementada. A futura versão comercial será desenhada com gestão simples de assinatura.</p></details>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="cta-line" aria-hidden="true"></div>
+        <div><p class="eyebrow"><span></span> Seu próximo fechamento começa aqui</p><h2>Decida com números<br /><em>que você consegue explicar.</em></h2></div>
+        <button class="button button-gold" data-open-app>Abrir demonstração <span aria-hidden="true">↗</span></button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><a class="brand inverse" href="#inicio"><img src="/manus-storage/kawr-logo_104b976f.png" alt="" class="brand-mark" /><span class="brand-copy"><strong>KAWR</strong><small>BUSINESS</small></span></a><p>Apoio inteligente à gestão financeira, tributária e gerencial.</p></div>
+      <div class="footer-links"><div><strong>PRODUTO</strong><a href="#recursos">Recursos</a><a href="#planos">Planos</a><button data-open-app>Demo</button></div><div><strong>INSTITUCIONAL</strong><button data-legal="privacidade">Privacidade</button><button data-legal="termos">Termos de Uso</button><a href="mailto:contato@kawrbusiness.com.br">Contato</a></div><div><strong>REDES</strong><a href="#" data-coming-soon>LinkedIn</a><a href="#" data-coming-soon>Instagram</a><a href="#" data-coming-soon>YouTube</a></div></div>
+      <div class="footer-bottom"><span>© 2026 Kawr Business. Todos os direitos reservados.</span><span>Feito para decisões mais claras.</span></div>
+    </footer>
+  </div>
+
+  <!-- WORKSPACE DEMONSTRATIVO -->
+  <div id="appView" class="app-view" hidden>
+    <aside class="app-sidebar" id="appSidebar">
+      <div class="app-brand-row"><a class="brand inverse" href="#" data-close-app><img src="/manus-storage/kawr-logo_104b976f.png" alt="" class="brand-mark" /><span class="brand-copy"><strong>KAWR</strong><small>BUSINESS</small></span></a><button class="sidebar-close" data-close-sidebar aria-label="Fechar menu">×</button></div>
+      <div class="company-switcher"><div class="company-avatar">KD</div><div><strong>Kawr Demo Ltda.</strong><small>Visão demonstrativa</small></div><span>⌄</span></div>
+      <nav class="app-nav" aria-label="Módulos do produto">
+        <p>ANÁLISE</p>
+        <button class="active" data-app-page="overview"><span>⌂</span> Visão geral</button>
+        <button data-app-page="financas"><span>↕</span> Dados financeiros</button>
+        <button data-app-page="calculadoras"><span>∑</span> Calculadoras</button>
+        <button data-app-page="tributos"><span>◇</span> Simulação tributária</button>
+        <p>INTELIGÊNCIA</p>
+        <button data-app-page="alertas"><span>!</span> Alertas <b id="alertBadge">3</b></button>
+        <button data-app-page="score"><span>◎</span> Score financeiro</button>
+        <button data-app-page="relatorio"><span>▤</span> Relatório</button>
+      </nav>
+      <div class="sidebar-notice"><span>i</span><p><strong>Ambiente demonstrativo</strong>Os dados não são enviados nem persistidos em nuvem.</p></div>
+      <button class="back-site" data-close-app>← Voltar ao site</button>
+    </aside>
+
+    <div class="app-shell">
+      <header class="app-header">
+        <button class="app-menu" data-open-sidebar aria-label="Abrir menu">☰</button>
+        <div class="workspace-heading"><span class="workspace-k">K</span><div><p id="appBreadcrumb">ANÁLISE / VISÃO GERAL</p><h1 id="appTitle">Visão geral</h1></div><small>EXECUTIVE BENCH<br />DEMO / 2026</small></div>
+        <div class="app-header-actions"><span class="last-update"><i></i> Atualizado agora</span><button class="icon-button" data-app-page="alertas" aria-label="Ver alertas">!</button><button class="avatar-button">KD</button></div>
+      </header>
+
+      <main class="app-main" id="appMain">
+        <section class="app-page active" data-page="overview">
+          <div class="page-intro"><div><p class="app-eyebrow">FECHAMENTO · JULHO 2026</p><h2>Boa tarde, <em>Kawe.</em></h2><p>A empresa mantém uma posição saudável, com atenção necessária ao crescimento das despesas variáveis.</p></div><div class="intro-actions"><button class="button button-app-outline" data-app-page="financas">Atualizar dados</button><button class="button button-app-gold" data-print-report>Exportar relatório</button></div></div>
+          <div class="disclaimer-banner"><span>i</span><p><strong>Leitura de apoio gerencial.</strong> Indicadores e cenários não substituem avaliação contábil, fiscal ou financeira profissional.</p></div>
+          <div class="kpi-grid">
+            <article class="kpi-card"><div><p>Receita total</p><span class="trend positive">↗ <b id="revenueTrend">12,4%</b></span></div><strong id="kpiRevenue">R$ 128.400</strong><small>Comparado ao período anterior</small></article>
+            <article class="kpi-card"><div><p>Despesas</p><span class="trend warning">↗ <b id="expenseTrend">8,1%</b></span></div><strong id="kpiExpenses">R$ 76.920</strong><small>59,9% da receita</small></article>
+            <article class="kpi-card featured-kpi"><div><p>Lucro líquido</p><span class="trend positive">↗ 18,2%</span></div><strong id="kpiProfit">R$ 38.520</strong><small id="kpiProfitDetail">Margem líquida de 30,0%</small></article>
+            <article class="kpi-card"><div><p>Saldo de caixa</p><span class="status-pill">POSITIVO</span></div><strong id="kpiCash">R$ 62.300</strong><small>Após movimentações do período</small></article>
+          </div>
+          <div class="dashboard-grid">
+            <article class="panel chart-panel wide-panel"><div class="panel-head"><div><p>DESEMPENHO FINANCEIRO</p><h3>Receita x despesas</h3></div><div class="legend"><span class="revenue-dot">Receita</span><span class="expense-dot">Despesas</span></div></div><div class="chart-tooltip" id="chartTooltip"></div><svg id="performanceChart" class="line-chart" viewBox="0 0 760 280" role="img" aria-label="Gráfico de receita e despesas dos últimos seis meses"></svg><div class="chart-axis"><span>FEV</span><span>MAR</span><span>ABR</span><span>MAI</span><span>JUN</span><span>JUL</span></div></article>
+            <article class="panel score-panel"><div class="panel-head"><div><p>SAÚDE FINANCEIRA</p><h3>Score atual</h3></div><button class="panel-action" data-app-page="score">Detalhes ↗</button></div><div class="score-gauge" id="scoreGauge"><div><strong id="scoreValue">824</strong><span>/1000</span></div></div><div class="score-classification"><i></i><strong id="scoreLabel">Saudável</strong><span>Boa capacidade de sustentação</span></div></article>
+            <article class="panel cash-panel"><div class="panel-head"><div><p>CAIXA</p><h3>Fluxo mensal</h3></div><button class="panel-action" data-calc="cashflow">Ver cálculos</button></div><div class="cash-bars" id="cashBars"></div><div class="cash-summary"><div><span>Entradas</span><strong id="cashIn">R$ 128.400</strong></div><div><span>Saídas</span><strong id="cashOut">R$ 89.880</strong></div></div></article>
+            <article class="panel alert-panel"><div class="panel-head"><div><p>ATENÇÃO REQUERIDA</p><h3>Alertas prioritários</h3></div><button class="panel-action" data-app-page="alertas">Ver todos ↗</button></div><div id="overviewAlerts" class="compact-alerts"></div></article>
+            <article class="panel tax-panel"><div class="panel-head"><div><p>RESUMO TRIBUTÁRIO</p><h3>Estimativa do mês</h3></div><button class="panel-action" data-app-page="tributos">Simular ↗</button></div><div class="tax-highlight"><span>Regime selecionado</span><strong id="taxRegimeLabel">Simples Nacional</strong></div><div class="tax-row"><span>Alíquota estimada</span><strong id="taxRateOverview">10,70%</strong></div><div class="tax-row"><span>Tributos estimados</span><strong id="taxAmountOverview">R$ 13.738,80</strong></div><div class="tax-note">Estimativa educacional. Valide enquadramento e apuração com seu contador.</div></article>
+          </div>
+        </section>
+
+        <section class="app-page" data-page="financas">
+          <div class="page-intro compact"><div><p class="app-eyebrow">BASE DE ANÁLISE</p><h2>Dados <em>financeiros.</em></h2><p>Atualize os valores do período. Todos os módulos serão recalculados automaticamente.</p></div><button class="button button-app-gold" id="loadExample">Restaurar exemplo</button></div>
+          <form id="financeForm" class="data-form">
+            <div class="form-section"><div class="form-section-head"><span>01</span><div><h3>Resultado do período</h3><p>Valores mensais usados na DRE e nos indicadores.</p></div></div><div class="field-grid">
+              <label><span>Receita bruta</span><div class="money-field"><b>R$</b><input id="revenueInput" type="number" min="0" step="100" value="128400" /></div></label>
+              <label><span>Custos variáveis</span><div class="money-field"><b>R$</b><input id="variableCostInput" type="number" min="0" step="100" value="38520" /></div></label>
+              <label><span>Despesas fixas</span><div class="money-field"><b>R$</b><input id="fixedCostInput" type="number" min="0" step="100" value="38400" /></div></label>
+              <label><span>Pró-labore + folha</span><div class="money-field"><b>R$</b><input id="payrollInput" type="number" min="0" step="100" value="28600" /></div></label>
+            </div></div>
+            <div class="form-section"><div class="form-section-head"><span>02</span><div><h3>Movimentação de caixa</h3><p>Saldos para análise de liquidez e estabilidade.</p></div></div><div class="field-grid">
+              <label><span>Saldo inicial de caixa</span><div class="money-field"><b>R$</b><input id="initialCashInput" type="number" min="0" step="100" value="23780" /></div></label>
+              <label><span>Contas a receber</span><div class="money-field"><b>R$</b><input id="receivablesInput" type="number" min="0" step="100" value="42800" /></div></label>
+              <label><span>Contas a pagar</span><div class="money-field"><b>R$</b><input id="payablesInput" type="number" min="0" step="100" value="31500" /></div></label>
+              <label><span>Receita do período anterior</span><div class="money-field"><b>R$</b><input id="previousRevenueInput" type="number" min="0" step="100" value="114200" /></div></label>
+            </div></div>
+            <div class="form-footer"><p><span>✓</span> Cálculos atualizados localmente. Nenhum dado é enviado.</p><button type="button" class="button button-app-gold" data-app-page="overview">Ver análise atualizada</button></div>
+          </form>
+        </section>
+
+        <section class="app-page" data-page="calculadoras">
+          <div class="page-intro compact"><div><p class="app-eyebrow">FERRAMENTAS AUDITÁVEIS</p><h2>Calculadoras <em>financeiras.</em></h2><p>Escolha uma ferramenta, ajuste os valores e abra a trilha completa do resultado.</p></div></div>
+          <div class="calculator-layout">
+            <nav class="calculator-tabs" aria-label="Calculadoras">
+              <button class="active" data-calculator="margin">Margem de lucro <span>→</span></button><button data-calculator="netprofit">Lucro líquido <span>→</span></button><button data-calculator="breakeven">Ponto de equilíbrio <span>→</span></button><button data-calculator="markup">Markup <span>→</span></button><button data-calculator="percentage">Percentuais <span>→</span></button><button data-calculator="cashflow">Fluxo de caixa <span>→</span></button><button data-calculator="dre">DRE simplificada <span>→</span></button>
+            </nav>
+            <div class="calculator-card">
+              <div class="calculator-head"><span id="calcIndex">01 / 07</span><div><p id="calcEyebrow">RENTABILIDADE</p><h3 id="calcTitle">Margem de lucro</h3><p id="calcDescription">Descubra quanto do faturamento se converte em resultado líquido.</p></div></div>
+              <div id="calculatorFields" class="calculator-fields"></div>
+              <div class="calculator-result"><div><span>RESULTADO</span><strong id="calculatorResult">30,00%</strong><small id="calculatorInterpretation">A cada R$ 100 faturados, R$ 30 permanecem como lucro.</small></div><button class="button button-outline-light" id="viewCalculatorSteps">Ver cálculos</button></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="app-page" data-page="tributos">
+          <div class="page-intro compact"><div><p class="app-eyebrow">CENÁRIO EDUCACIONAL</p><h2>Simulação <em>tributária.</em></h2><p>Compare estimativas e leve a leitura para validação do seu contador.</p></div></div>
+          <div class="tax-disclaimer"><strong>Aviso importante</strong><p>Esta simulação usa hipóteses simplificadas e não considera todas as atividades, anexos, sublimites, retenções ou regras locais. Não é apuração fiscal nem recomendação de enquadramento.</p></div>
+          <div class="tax-simulator">
+            <div class="tax-controls">
+              <div class="segmented" role="group" aria-label="Regime tributário"><button class="active" data-tax-regime="simples">Simples Nacional</button><button data-tax-regime="presumido">Lucro Presumido</button><button disabled title="Preparado para versão futura">Lucro Real <small>EM BREVE</small></button></div>
+              <div class="tax-fields">
+                <label><span>Receita bruta mensal</span><div class="money-field"><b>R$</b><input id="taxRevenueInput" type="number" min="0" step="100" value="128400" /></div></label>
+                <label><span>Receita bruta em 12 meses</span><div class="money-field"><b>R$</b><input id="taxRbt12Input" type="number" min="0" step="1000" value="1398000" /></div></label>
+                <label><span>Folha + pró-labore em 12 meses</span><div class="money-field"><b>R$</b><input id="taxPayroll12Input" type="number" min="0" step="1000" value="412000" /></div></label>
+                <label><span>Perfil simplificado</span><select id="activityProfile"><option value="service">Serviços profissionais</option><option value="commerce">Comércio</option><option value="industry">Indústria</option></select></label>
+              </div>
+              <button class="button button-app-gold full-button" id="recalculateTax">Recalcular estimativa</button>
+            </div>
+            <div class="tax-result-card">
+              <div class="tax-result-head"><div><p>ESTIMATIVA ATUAL</p><h3 id="taxResultRegime">Simples Nacional</h3></div><span id="taxRange">Faixa 4 · hipótese simplificada</span></div>
+              <div class="effective-rate"><span>Alíquota efetiva estimada</span><strong id="taxEffectiveRate">10,70%</strong></div>
+              <div class="tax-result-grid"><div><span>Receita bruta</span><strong id="taxGross">R$ 128.400,00</strong></div><div><span>Impostos estimados</span><strong id="taxEstimated">R$ 13.738,80</strong></div><div><span>Valor líquido estimado</span><strong id="taxNet">R$ 114.661,20</strong></div><div><span>Fator R</span><strong id="taxFactorR">29,47%</strong></div></div>
+              <div class="tax-incidence"><p>TRIBUTOS CONSIDERADOS NA HIPÓTESE</p><div id="taxChips"><span>IRPJ</span><span>CSLL</span><span>PIS</span><span>COFINS</span><span>CPP</span><span>ISS</span></div></div>
+              <button class="button button-outline-light full-button" id="viewTaxSteps">Ver cálculos e hipóteses</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="app-page" data-page="alertas">
+          <div class="page-intro compact"><div><p class="app-eyebrow">MONITORAMENTO AUTOMÁTICO</p><h2>Alertas e <em>prioridades.</em></h2><p>Os sinais abaixo são gerados a partir dos dados informados e não representam recomendação profissional.</p></div><div class="filter-pills"><button class="active" data-alert-filter="all">Todos</button><button data-alert-filter="high">Alta</button><button data-alert-filter="medium">Média</button></div></div>
+          <div class="alert-summary"><div><strong id="highAlertCount">1</strong><span>alta prioridade</span></div><div><strong id="mediumAlertCount">2</strong><span>atenção moderada</span></div><div><strong id="healthyCount">3</strong><span>indicadores saudáveis</span></div></div>
+          <div id="alertsList" class="alerts-list"></div>
+        </section>
+
+        <section class="app-page" data-page="score">
+          <div class="page-intro compact"><div><p class="app-eyebrow">SAÚDE FINANCEIRA</p><h2>Score <em>financeiro.</em></h2><p>Uma leitura sintética de seis dimensões, calculada com os dados desta demonstração.</p></div><button class="button button-app-outline" data-app-page="financas">Revisar dados</button></div>
+          <div class="score-layout">
+            <div class="score-hero-card"><div class="score-ring-large" id="scoreRingLarge"><div><span>SCORE ATUAL</span><strong id="scoreValueLarge">824</strong><small>de 1000 pontos</small></div></div><div class="score-hero-copy"><span class="score-status" id="scoreStatusLarge">SAUDÁVEL</span><h3 id="scoreHeadline">Boa capacidade de sustentação.</h3><p id="scoreExplanation">A empresa apresenta resultado positivo e liquidez adequada. O principal ponto de atenção está no ritmo de crescimento das despesas.</p><button class="button button-outline-light" data-calc="score">Como o score é calculado</button></div></div>
+            <div class="dimension-panel"><div class="panel-head"><div><p>COMPOSIÇÃO</p><h3>Dimensões analisadas</h3></div></div><div id="scoreDimensions" class="score-dimensions"></div></div>
+          </div>
+          <div class="recommendations"><div class="panel-head"><div><p>PRÓXIMOS PASSOS</p><h3>Como melhorar o score</h3></div></div><div id="scoreRecommendations" class="recommendation-grid"></div></div>
+        </section>
+
+        <section class="app-page report-page" data-page="relatorio" id="reportPage">
+          <div class="page-intro compact no-print"><div><p class="app-eyebrow">DOCUMENTO EXECUTIVO</p><h2>Relatório <em>consolidado.</em></h2><p>Revise a prévia e use a impressão do navegador para salvar em PDF.</p></div><button class="button button-app-gold" data-print-report>Exportar relatório em PDF</button></div>
+          <div class="report-sheet">
+            <div class="report-header"><div class="brand report-brand"><img src="/manus-storage/kawr-logo_104b976f.png" alt="" class="brand-mark" /><span class="brand-copy"><strong>KAWR</strong><small>BUSINESS</small></span></div><div><span>RELATÓRIO GERENCIAL</span><strong id="reportDate">15 JUL 2026</strong></div></div>
+            <div class="report-title"><p>Kawr Demo Ltda.</p><h2>Leitura financeira<br /><em>consolidada.</em></h2><span>Documento de apoio gerencial · Não substitui análise contábil ou fiscal profissional</span></div>
+            <div class="report-kpis"><div><span>Receita</span><strong id="reportRevenue">R$ 128.400</strong></div><div><span>Lucro líquido</span><strong id="reportProfit">R$ 38.520</strong></div><div><span>Margem líquida</span><strong id="reportMargin">30,00%</strong></div><div><span>Score</span><strong id="reportScore">824 / 1000</strong></div></div>
+            <div class="report-section"><p class="report-label">01 · DESEMPENHO</p><div class="report-two-cols"><div><h3>Resumo do período</h3><p id="reportSummary">A operação apresenta resultado positivo e margem saudável. As despesas representam 59,9% da receita e merecem acompanhamento pelo ritmo de crescimento.</p></div><div class="report-table"><div><span>Receita bruta</span><strong id="reportGross">R$ 128.400,00</strong></div><div><span>Custos + despesas</span><strong id="reportCosts">R$ 76.920,00</strong></div><div><span>Lucro estimado</span><strong id="reportNetProfit">R$ 38.520,00</strong></div></div></div></div>
+            <div class="report-section"><p class="report-label">02 · SCORE E ALERTAS</p><div class="report-two-cols"><div><h3 id="reportScoreTitle">Score saudável: 824</h3><p>A leitura combina liquidez, lucratividade, caixa, crescimento, eficiência e estabilidade.</p></div><div id="reportAlerts" class="report-alerts"></div></div></div>
+            <div class="report-section"><p class="report-label">03 · CENÁRIO TRIBUTÁRIO</p><div class="report-two-cols"><div><h3 id="reportTaxRegime">Simples Nacional</h3><p>Estimativa educacional baseada nas hipóteses informadas. O enquadramento e a apuração devem ser validados por profissional contábil.</p></div><div class="report-table"><div><span>Alíquota efetiva</span><strong id="reportTaxRate">10,70%</strong></div><div><span>Impostos estimados</span><strong id="reportTaxAmount">R$ 13.738,80</strong></div><div><span>Valor líquido</span><strong id="reportTaxNet">R$ 114.661,20</strong></div></div></div></div>
+            <div class="report-footer"><span>Kawr Business · Demonstração</span><span id="reportFooterDate">Gerado em 15/07/2026</span></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="calculationModal" hidden>
+    <section class="calculation-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head"><div><p>TRILHA DE AUDITORIA</p><h2 id="modalTitle">Como chegamos ao resultado</h2></div><button class="modal-close" data-close-modal aria-label="Fechar modal">×</button></div>
+      <div id="modalContent" class="modal-content"></div>
+      <div class="modal-footer"><p><span>i</span> Use esta memória como apoio e valide decisões tributárias e contábeis com profissional habilitado.</p><button class="button button-dark" data-close-modal>Entendi</button></div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="legalModal" hidden>
+    <section class="calculation-modal legal-modal" role="dialog" aria-modal="true" aria-labelledby="legalTitle"><div class="modal-head"><div><p>INSTITUCIONAL</p><h2 id="legalTitle">Política</h2></div><button class="modal-close" data-close-legal aria-label="Fechar modal">×</button></div><div id="legalContent" class="modal-content"></div><div class="modal-footer"><p>Conteúdo demonstrativo para esta versão do produto.</p><button class="button button-dark" data-close-legal>Fechar</button></div></section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span>✓</span><p id="toastText">Informação atualizada.</p></div>
+  <script type="module" src="/script.js"></script>
+  <script defer src="%VITE_ANALYTICS_ENDPOINT%/umami" data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+</body>
 </html>
